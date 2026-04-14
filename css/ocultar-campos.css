@@ -1,0 +1,7 @@
+input[name="cf_utm_source"],
+input[name="cf_utm_medium"],
+input[name="cf_utm_campaign"],
+input[name="cf_utm_content"],
+input[name="cf_utm_term"]  {
+  display: none !important;
+}

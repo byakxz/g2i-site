@@ -1,0 +1,9 @@
+    font-family: inter;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #4B648F;
+    justify-content: space-around;
+    padding: 10vh 0;
+    gap: 20px;
