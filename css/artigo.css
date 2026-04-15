@@ -247,8 +247,8 @@ article h1 {
 }
 
 article h2 {
-    font-weight: 600;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 26px;
     background: linear-gradient(to bottom, #12263B, #3168A1);
     -webkit-background-clip: text;
     background-clip: text;
@@ -261,6 +261,12 @@ article h3 {
     color: #12263B;
 }
 
+article h4 {
+    font-weight: 800;
+    font-size: 24px;
+    color: #12263B;
+}
+
 article p {
     font-weight: 400;
     font-size: 14px;
@@ -268,11 +274,168 @@ article p {
     line-height: 1.6;
 }
 
+.destaque-span {
+    font-weight: 600;
+    color: #12263B;
+}
+
 .image {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 20px 0;
+}
+
+.tempo-leitura {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tl-titulo {
+    font-weight: 300;
+    font-size: 13px;
+    font-style: Medium;
+    color: #505050;
+}
+
+.tl-conteudo {
+    font-weight: 600;
+    font-size: 13px;
+    color: #12263B;
+}
+
+.tl-compartilhe {
+    display: flex;
+    gap: 15px;
+}
+.tl-compartilhe img {
+    width: 25px;
+}
+
+.blog-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.be-titulo {
+    font-weight: 700;
+    font-size: 18px;
+    background: linear-gradient(to bottom, #12263B, #3168A1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.blog-email label {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.blog-email label::after {
+    content: " *";
+    color: #E55C5C;
+}
+
+.blog-email input {
+    width: 100%;
+    padding: 12px 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+}
+
+.blog-email button {
+    width: 100%;
+    padding: 12px 20px;
+    color: #fff;
+    background-color: #3168A1;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.fat-fluxo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.connector {
+    display: none;
+}
+
+.ff-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4B648F66;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.ff-box p {
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #12263B;
+
+}
+
+.fat-sus-erro p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #12263B;
+}
+
+.fat-sus-erro li {
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+}
+
+.fat-sus-erro li::before {
+    content: "\274C";
+}
+
+.fat-sus-acerto p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #12263B;
+}
+
+.fat-sus-acerto li {
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+}
+
+.fat-sus-acerto li::before {
+    content: "\2705";
+}
+
+.fat-sus-pratica li{
+    font-weight: 400;
+    font-size: 14px;
+    list-style: none;
+}
+
+.fat-sus-pratica li::before {
+    content: "\2714";
 }
 
 article ul {
@@ -377,6 +540,23 @@ article :not(:last-child) {
     transform: scale(1.2);
 }
 
+.especialista-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px 20px;
+    color: #fff;
+    background-color: #DF1E2F;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
 @media (min-width: 768px) {
 
     article {
@@ -425,17 +605,50 @@ article :not(:last-child) {
     .moldura img {
         width: 40px;
     }
+
+    .tl-titulo {
+        font-size: 16px;
+    }
+
+    .tl-conteudo {
+        font-size: 16px;
+    }
+
+    .ff-box p {
+        font-size: 16px;
+    }
+
+    .fat-sus-erro p,
+    .fat-sus-acerto p {
+        font-size: 18px;
+    }
+
+    .fat-sus-erro li,
+    .fat-sus-acerto li,
+    .fat-sus-pratica li {
+        font-size: 18px;
+    }
+
+    .blog-email button {
+        width: 50%;
+    }
+
+    .be-titulo {
+        font-size: 24px;
+    }
+
+    .especialista-button {
+        font-size: 22px;
+        width: 60%;
+    }
 }
 
 @media (min-width: 1024px) {
 
     article {
-        width: 65vw;
-        margin: 0 auto;
-        padding: 10vh 2vw;
+        width: 100%;
+        padding: 10vh 20vw;
         gap: 40px;
-        border-radius: 15px;
-        box-shadow: 0 15px 40px rgba(0, 20, 50, 0.1);
     }
 
     article h1 {
@@ -453,7 +666,7 @@ article :not(:last-child) {
     }
 
     article p {
-        font-size: 18px;
+        font-size: 24px;
         line-height: 1.7;
     }
 
@@ -486,6 +699,53 @@ article :not(:last-child) {
     .moldura img {
         width: 40px;
         height: 40px;
+    }
+
+    .fat-fluxo {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .connector {
+        display: flex;
+        align-items: center;
+    }
+
+    .tl-titulo {
+        font-size: 24px;
+    }
+
+    .tl-conteudo {
+        font-size: 24px;
+    }
+
+    .ff-box p {
+        font-size: 23px;
+    }
+
+    .fat-sus-erro p,
+    .fat-sus-acerto p {
+        font-size: 24px;
+    }
+
+    .fat-sus-erro li,
+    .fat-sus-acerto li,
+    .fat-sus-pratica li {
+        font-size: 24px;
+    }
+
+    .blog-email button {
+        width: 20vw;
+    }
+
+    .be-titulo {
+        font-size: 30px;
+    }
+
+    .especialista-button {
+        font-size: 32px;
+        width: 30vw;
+        padding: 20px;
     }
 }
 
