@@ -88,7 +88,7 @@
 
         <div id="content-wrapper">
 
-            <img class="image" src="../img/artigo5.webp" alt="">
+            <img class="image" src="../img/receituario.jpeg" alt="">
             <p>A transformação digital vem redefinindo a forma como a saúde é administrada e acessada. Entre as
                 inovações mais relevantes dos últimos anos está a receita médica digital, também conhecida como
                 prescrição eletrônica, que modernizou um dos processos mais tradicionais do atendimento clínico.</p>
@@ -263,6 +263,22 @@
         </div>
 
     </footer>
+
+    <!-- Modal de inscrição por e-mail -->
+    <div id="email-modal-overlay" class="email-modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="email-modal">
+            <button class="email-modal-close" onclick="closeEmailModal()" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="blog-email">
+                <span class="be-titulo">Descubra como integrar sua gestão na prática.</span>
+                <p class="be-subtitulo">Receba dicas para melhorar a gestão do seu hospital ou clínica diretamente no seu e-mail. Inscreva-se no blog da g2i:</p>
+                <label for="email-modal-input">E-mail</label>
+                <input type="email" id="email-modal-input" placeholder="Seu melhor email" required>
+                <button type="submit">Inscreva-se</button>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/preview-artigo.js"></script>
     <script src="../js/dropdown-menu.js"></script>

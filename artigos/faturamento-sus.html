@@ -110,13 +110,6 @@
 
             <p>Mais do que apenas registrar e enviar informações, o faturamento SUS exige organização, precisão e inteligência.</p>
             <p>E a verdade é simples: quem entende o processo, fatura melhor.</p>
-<!-- 
-            <div class="blog-email">
-                <span class="be-titulo">Inscreva-se e receba nossos artigos na sua caixa de e-mail!</span>
-                <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="Seu melhor email" required>
-                <button type="submit">Inscreva-se</button>
-            </div> -->
 
             <h3>Como funciona o processo de faturamento SUS na prática?</h3>
             <p>O faturamento SUS é o processo de registrar, validar, consolidar e enviar a produção assistencial de uma instituição de saúde para garantir o pagamento pelos serviços prestados pelo Sistema Único de Saúde. Esse processo envolve documentos como AIH, BPA e APAC e exige controle rigoroso para evitar erros, glosas e perda de receita.</p>
@@ -334,6 +327,22 @@
         </div>
 
     </footer>
+
+    <!-- Modal de inscrição por e-mail -->
+    <div id="email-modal-overlay" class="email-modal-overlay" onclick="handleOverlayClick(event)">
+        <div class="email-modal">
+            <button class="email-modal-close" onclick="closeEmailModal()" aria-label="Fechar">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="blog-email">
+                <span class="be-titulo">Descubra como integrar sua gestão na prática.</span>
+                <p class="be-subtitulo">Receba dicas para melhorar a gestão do seu hospital ou clínica diretamente no seu e-mail. Inscreva-se no blog da g2i:</p>
+                <label for="email-modal-input">E-mail</label>
+                <input type="email" id="email-modal-input" placeholder="Seu melhor email" required>
+                <button type="submit">Inscreva-se</button>
+            </div>
+        </div>
+    </div>
 
     <script src="../js/preview-artigo.js"></script>
     <script src="../js/dropdown-menu.js"></script>

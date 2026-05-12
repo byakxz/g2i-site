@@ -1,19 +1,17 @@
 const swiper = new Swiper('.swiper', {
- 
-  loop: false, 
+
+  loop: false,
 
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
-    dynamicBullets: true,
-    dynamicMainBullets: 1,
   },
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 150,
 
-   autoplay: {
-    delay: 3000, 
-    disableOnInteraction: true, 
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
   },
 
 });
