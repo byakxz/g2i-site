@@ -50,7 +50,7 @@ class MobileNavbar {
     }
 
     handleResize() {
-        if (window.innerWidth > 1000) {
+        if (window.innerWidth > 1024) {
             this.closeMenu();
         }
     }
