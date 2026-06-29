@@ -62,7 +62,7 @@ class MobileNavbar {
 
         this.itensLinks.forEach((link) => {
             link.addEventListener("click", (event) => {
-                if (event.currentTarget.closest(".div-dropdown")) {
+                if (event.currentTarget.closest(".div-dropdown-header")) {
                     return;
                 }
 
@@ -84,9 +84,9 @@ class MobileNavbar {
 }
 
 const mobileNavbar = new MobileNavbar(
-    ".menu-topo",
-    ".itens-topo",
-    ".itens-topo a"
+    ".button-menu-header",
+    ".ul-nav-header",
+    ".ul-nav-header a"
 );
 
 mobileNavbar.init();

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const perguntas = document.querySelectorAll('.faq-pergunta');
+    const perguntas = document.querySelectorAll('.div-pergunta-perguntas-frequentes');
 
     perguntas.forEach(pergunta => {
         pergunta.addEventListener('click', () => {

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const dropdownTriggers = document.querySelectorAll('.div-dropdown');
+    const dropdownTriggers = document.querySelectorAll('.div-dropdown-header');
 
     dropdownTriggers.forEach(function(trigger) {
         trigger.addEventListener('click', function(event) {
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const dropdownMenu = this.nextElementSibling;
 
-            document.querySelectorAll('.dropdown-menu.show').forEach(function(openMenu) {
+            document.querySelectorAll('.ul-dropdown-header.show').forEach(function(openMenu) {
                 if (openMenu !== dropdownMenu) {
                     openMenu.classList.remove('show');
                 }
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     window.addEventListener('click', function() {
-        document.querySelectorAll('.dropdown-menu.show').forEach(function(openMenu) {
+        document.querySelectorAll('.ul-dropdown-header.show').forEach(function(openMenu) {
             openMenu.classList.remove('show');
         });
     });
